@@ -20,6 +20,7 @@ function testBrowser(
     var resultBlock = document.getElementById(name + "-result");
 
     var result = testFunction(resultBlock);
+    console.log(name, result);
     if (result === HEADLESS) {
         row.classList.add("headless");
     }
@@ -46,7 +47,7 @@ function testUserAgent(resultBlock) {
     var agent = navigator.userAgent;
 
     writeToBlock(resultBlock, agent);
-    return /headless/i.test(agent);
+    return /headless/i.test(agent) ? HEADLESS : HEADFUL;
 }
 
 // Test for app version (almost equal to user agent)
@@ -55,7 +56,7 @@ function testAppVersion(resultBlock) {
     var appVersion = navigator.appVersion;
 
     writeToBlock(resultBlock, appVersion);
-    return /headless/i.test(appVersion);
+    return /headless/i.test(appVersion) ? HEADLESS : HEADFUL;
 }
 
 // Test for plugins
@@ -168,7 +169,7 @@ function testTimeElapse(resultBlock) {
     var start = Date.now();
     var elapse = Date.now() - start;
     timeElapseWriteResult(resultBlock, elapse);
-    return elapse < 30;
+    return elapse < 30 ? HEADLESS : HEADFUL;
 }
 
 function timeElapseWriteResult(

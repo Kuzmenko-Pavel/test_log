@@ -16,6 +16,7 @@ async function testBrowser(name, testFunction) {
   const resultBlock = document.getElementById(`${name}-result`);
 
   result = await testFunction(resultBlock);
+  console.log(name, result);
   if (result == HEADLESS)
     row.classList.add("headless");
   else if (result == HEADFUL)
