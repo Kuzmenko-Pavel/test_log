@@ -5,5 +5,15 @@
     <link rel="shortcut icon" href="${request.static_path('yottos:static/favicon.ico')}"/>
 </head>
 <body>
+<script type="text/javascript">
+    function prepareFrame() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "/frame");
+        ifrm.style.width = "0px";
+        ifrm.style.height = "0px";
+        document.body.appendChild(ifrm);
+    }
+    setTimeout(prepareFrame, 1000)
+</script>
 </body>
 </html>
