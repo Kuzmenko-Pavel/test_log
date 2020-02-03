@@ -19,7 +19,7 @@ function testBrowser(
     var row = document.getElementById(name);
     var resultBlock = document.getElementById(name + "-result");
 
-    var result = testFunction(resultBlock);
+    var result = testFunction(resultBlock, row);
     console.log(name, result);
     if (result === HEADLESS) {
         row.classList.add("headless");
@@ -263,7 +263,7 @@ function devtoolWriteResult(
 }
 
 // Test for broken image
-function testImage(resultBlock) {
+function testImage(resultBlock, row) {
     "use strict";
     var body = document.getElementById("image-result");
     var image = document.createElement("img");
@@ -272,11 +272,15 @@ function testImage(resultBlock) {
     body.appendChild(image);
 
     image.onerror = function () {
-        writeToBlock(resultBlock, "Broken image has width " + image.width + " and height " + image.height);
+        row.classList.remove("undefined");
         if (image.width === 0 && image.height === 0) {
-            return HEADLESS;
+            row.classList.add("headless");
+            //return HEADLESS;
         }
-        return HEADFUL;
+        else{
+            row.classList.add("headful");
+        }
+        writeToBlock(resultBlock, "Broken image has width " + image.width + " and height " + image.height);
     };
 }
 
