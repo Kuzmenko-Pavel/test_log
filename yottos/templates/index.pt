@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html manifest="${request.static_path('yottos:static/yottos.cache')}" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="norton-safeweb-site-verification"
+          content="-vy6v91her2ngs2w-iq-5-mncylyndpmu7vj81uevrnuxi3j4x1jy55vlmqcua0lyyu732ltoejhnd8976hcwz2nxivy5-otp5rt44wf3r18l60ieveu7p5b5n3zqm5d"/>
+    <meta name="theme-color" content="#6db500">
+    <meta name="msapplication-TileColor" content="#6db500">
+    <meta name="msapplication-navbutton-color" content="#6db500">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#6db500">
+    <link rel="manifest" href="${request.static_path('yottos:static/manifest.json')}">
+    <meta name="yandex-verification" content="a3e73c604503cb6c"/>
+    <title>YOTTOS™ Рекламные программы с оплатой за клик: Рекламодателям, Владельцам сайта, Интерент-маркетологам,
+        PR-специалистам</title>
+    <meta name="description"
+          content="Найдите новых клиентов онлайн с рекламой YOTTOS. Воспользуйтесь сервисом Yottos и приумножьте результат ваших вложений">
+    <meta name="keywords"
+          content="ретаргетинговая сеть, ремаркетинговая сеть, лучшая тизерная сеть, медийная интернет реклама, CPC, CPM, PPC, реклама в интернете, рекламная сеть украина, сеть контекстной рекламы, тизерная рекламная сеть, тизерная сеть украина, yotos, yottos, ётос, ёттос, йотос, йоттос, сегментирование аудитории, таргетированная рекламная сеть, контекстно ремаркетинговая сеть">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="${request.static_path('yottos:static/theme/normalize.css')}">
+    <link rel="stylesheet" href="${request.static_path('yottos:static/theme/main.css')}">
+    <link rel="stylesheet" href="${request.static_path('yottos:static/theme/adaptive.css')}">
+    <link href="${request.static_path('yottos:static/theme/font.css')}" rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="${request.static_path('yottos:static/favicon.ico')}"/>
+</head>
+<body>
+<!--[if lt IE 8]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+<header id='Header' class='clearfix'>
+    <nav class='g-section-inner header-inner'>
+        <a href='${request.route_url("index")}' class='logo-holder'></a>
+        <div class='top-nav-menu-button'></div>
+        <div class='top-nav-currentpage'>Главная</div>
+        <ul class='top-nav clearfix'>
+            <li class='top-nav-item current'><a href='${request.route_url("index")}'>Главная</a></li>
+            <li class='top-nav-item'><a href='${request.route_url("advertisers")}'>Для рекламодаталей</a></li>
+            <li class='top-nav-item'><a href='${request.route_url("webmasters")}'>Для вебмастеров</a></li>
+            <li class='top-nav-item'><a href='https://blog.yottos.com/'>Блог</a></li>
+        </ul>
+    </nav>
+</header>
+<main id='Main' role='main'>
+    <div class='page-header-holder'>
+        <div class='g-section-inner page-header-inner'>
+            <h1 class='page-header'>Помогаем создавать спрос</h1>
+        </div>
+    </div>
+    <div class='g-section-inner main-inner'>
+        <section class='home-section-snippet home-section-snippet-adv clearfix'>
+            <div class='home-section-snippet-image-holder'>
+                <img class='home-section-snippet-image'
+                     src='${request.static_path("yottos:static/img/home/home-adv.png")}' alt='Для рекламодателей'
+                     title=''/>
+            </div>
+            <div class='home-section-snippet-content'>
+                <h1 class='home-section-snippet-header'>Для рекламодателей</h1>
+                <p class='home-section-snippet-bigger-text'>
+                    YOTTOS &mdash; это генератор получения заинтересованных клиентов.
+                </p>
+                <ul class='ticked-list clearfix'>
+                    <li>Индивидуальный подход, партнерство и эксклюзивные возможности для представленности бренда
+                        на рынке интернет &mdash; рекламы.
+                    </li>
+                    <li>Возможность рекламного места на любой площадке рунета и уанета.</li>
+                </ul>
+                <div class='home-section-snippet-buttons'>
+                    <a class='button button-light' href='${request.route_url("advertisers")}'>Подробнее</a>
+                    <a class='button' href='${request.route_url("brief")}'>Создать спрос</a>
+                </div>
+            </div>
+            <div class='home-section-snippet-bottom'></div>
+        </section>
+
+        <section class='home-section-snippet home-section-snippet-web clearfix'>
+            <div class='home-section-snippet-image-holder'>
+                <img class='home-section-snippet-image'
+                     src='${request.static_path("yottos:static/img/home/home-web.png")}' alt='Для вебмастеров'
+                     title=''/>
+            </div>
+            <div class='home-section-snippet-content'>
+                <h1 class='home-section-snippet-header'>Для вебмастеров</h1>
+                <p class='home-section-snippet-bigger-text'>
+                    YOTTOS &mdash; это возможность значительно увеличить свой доход.
+                </p>
+                <ul class='ticked-list'>
+                    <li>Достойная монетизация площадок и высокий партнерский процент.</li>
+                    <li>Удобная статистика, высокий CTR, стабильность, возможность выбора дизайна и размера
+                        информера.
+                    </li>
+                </ul>
+                <div class='home-section-snippet-buttons'>
+                    <a class='button button-light' href='${request.route_url("webmasters")}'>Подробнее</a>
+                    <a class='button' href='https://getmyad.yottos.com/register_user/index' target='_blank'>Начать
+                        зарабатывать</a>
+                </div>
+            </div>
+            <div class='home-section-snippet-bottom'></div>
+        </section>
+
+        <section class='home-advantages home-section-snippet clearfix'>
+            <h1 class='home-advantages-header'>Наши преимущества</h1>
+            <div class='home-advantages-snippet'>
+                <div class='home-advantages-snippet-icon home-advantages-snippet-icon-specialists'></div>
+                <h2 class='home-advantages-snippet-header'>Грамотные специалисты</h2>
+                <ul class='home-advantages-snippet-content'>
+                    <li class='home-advantages-snippet-list-item'>Подбор оптимальных инструментов для решения Ваших
+                        задач.
+                    </li>
+                    <li class='home-advantages-snippet-list-item'>Разработка стратегии и внедрение качественных
+                        решений.
+                    </li>
+                    <li class='home-advantages-snippet-list-item'>Составление рекламных обращений с учетом
+                        специфики Вашего сайта.
+                    </li>
+                    <li class='home-advantages-snippet-list-item'>Оперативная оптимизация хода рекламной кампании.
+                        Анализ статистики.
+                    </li>
+                </ul>
+            </div>
+            <div class='home-advantages-snippet'>
+                <div class='home-advantages-snippet-icon home-advantages-snippet-icon-audience'></div>
+                <h2 class='home-advantages-snippet-header'>Огромная аудитория</h2>
+                <ul class='home-advantages-snippet-content'>
+                    <li class='home-advantages-snippet-list-item'>Аудитория партнерской сети 5 млн. уникальных
+                        пользователей в сутки.
+                    </li>
+                    <li class='home-advantages-snippet-list-item'>Охват украинского рынка 70%. Мы работаем только с
+                        ведущими
+                        площадками, которые обеспечивают качественный трафик.
+                    </li>
+                </ul>
+            </div>
+            <div class='home-advantages-snippet'>
+                <div class='home-advantages-snippet-icon home-advantages-snippet-icon-approach'></div>
+                <h2 class='home-advantages-snippet-header'>Комплексный подход</h2>
+                <ul class='home-advantages-snippet-content'>
+                    <li class='home-advantages-snippet-list-item'>Разработка концепции кампании учитывая специфику
+                        деятельности каждого клиента.
+                    </li>
+                    <li class='home-advantages-snippet-list-item'>Грамотное формирование спроса и выведение на рынок
+                        интернет-рекламы новых товаров и услуг.
+                    </li>
+                    <li class='home-advantages-snippet-list-item'>Медиа-планирование. Пост-клик анализ и оценка
+                        эффективности.
+                    </li>
+                </ul>
+            </div>
+            <div class='home-advantages-snippet'>
+                <div class='home-advantages-snippet-icon home-advantages-snippet-icon-accessibility'></div>
+                <h2 class='home-advantages-snippet-header'>Доступность</h2>
+                <p class='home-advantages-snippet-content'>
+                    Оплачиваются уникальные клики заинтересованных пользователей и гарантированные показы. Уникальность
+                    считается на протяжении всей рекламной кампании во всей партнерской сети.
+                </p>
+            </div>
+            <div class='home-section-snippet-bottom'></div>
+        </section>
+        <section class='home-advantages clearfix'>
+            <h1 class='home-advantages-header'>Рекламные программы YOTTOS™</h1>
+            <p class='home-advantages-snippet-content' style="color: rgba(102,102,102,0.6);">
+                Хотите чтобы о Вашем бизнесе узнали тысячи новых покупателей? Желаете получить место на любой площадке
+                рунета и уанета?
+                Вас интересует вопрос о том, как можно значительно увеличить доход имея свой сайт?
+                Все это и даже больше Вы сможете получить прямо сейчас. Компания Yottos™ готова с радостью помочь Вам
+                сэкономить время и предоставить качественные
+                услуги таргетированной интернет-рекламы в Украинской сети Yottos GetMyAd. Рекламодатели и вебмастера
+                любых городов Украины (Киев, Харьков, Одесса...)
+                могут посетить наш сайт, заказав себе услуги рекламы в интернете или же став нашими партнерами.
+            </p>
+            <p class='home-advantages-snippet-content' style="color: rgba(102,102,102,0.6);">
+                Вне зависимости от Вашего месторасположения, Вы сможете воспользоваться услугами интернет рекламы
+                Yottos™, предоставляемыми грамотными специалистами. Какие же преимущества сможет предложить Вам наша
+                компания? Yottos создает живой спрос, а поэтому мы сможем предложить Вам работу в максимально комфортное
+                и разумное время, при этом предупреждая о возможных рисках и разделяя ответственность.
+            </p>
+            <p class='home-advantages-snippet-content' style="color: rgba(102,102,102,0.6);">
+                Рекламные программы Yottos™ всегда смогут помочь Вам, а личный менеджер проконсультирует в любом
+                вопросе, который будет касаться предоставляемых услуг.
+            </p>
+            <p class='home-advantages-snippet-content' style="color: rgba(102,102,102,0.6);">
+                Вы являетесь рекламодателем? Маркетологи Yottos AdLoAd смогут стать полезными для Вашего бизнеса, мы
+                услышим все Ваши потребности и применим актуальные для Вас решения! Партнерская сеть Yottos ежедневно
+                охватывает более 5 млн. уникальных пользователей, а показы рекламных объявлений превышают 1 млрд. Мы
+                поможем правильно настроить креативы и найти наиболее оптимальные для Вашего проекта сценарии
+                предиктивного ремаркетинга так, чтобы привлечь максимальное количество клиентов для Вас. В кратчайшие
+                сроки Ваша компания сможет стать настоящим брендом.
+            </p>
+            <p class='home-advantages-snippet-content' style="color: rgba(102,102,102,0.6);">
+                Вы владелец сайта и хотите зарабатывать на размещении рекламы? Рекламные программы Yottos будут
+                полезными для Вас и здесь. Компания разработала современные инструменты, такие как GetMyAd, Long Life, а
+                также использует эффективные методы обеспечения качественной и стабильной работы системы. Мы поможем
+                подобрать наиболее доходное решение и Вы начнете получать доход с Ваших площадок уже сегодня.
+            </p>
+            <p class='home-advantages-snippet-content' style="color: rgba(102,102,102,0.6);">
+                Как же стать участником и начать сотрудничество с нами? Независимо от того, кем Вы являетесь,
+                рекламодателем или вебмастером,
+                Вам достаточно будет выполнить несколько простых действий. Для получения возможности размещаться на
+                интернет-площадках
+                Вам необходимо будет воспользоваться кнопкой «<a href="https://yottos.com/brief"
+                                                                 style="color: rgba(102,102,102,0.6);">Создать спрос</a>»
+                и заполнить предложенную форму.
+                Владельцы сайтов смогут отправить заявку на партнерство с нами, нажав на кнопку «<a
+                    href="https://getmyad.yottos.com/register_user/index" style="color: rgba(102,102,102,0.6);">Начать
+                зарабатывать</a>», после этого только останется заполнить указанные данные в предложенной форме.
+            </p>
+            <div class='home-section-snippet-bottom'></div>
+        </section>
+    </div>
+</main>
+<footer id='Footer' class='clearfix'>
+    <div class='g-section-inner footer-inner'>
+        <ul class='footer-nav clearfix'>
+            <li class='footer-nav-item'><a href='https://blog.yottos.com/' target='_blank'>Блог Yottos</a></li>
+            <li class='footer-nav-item'><a href='https://blog.yottos.com/novosti-kompanii/politika-konfidencialnosti/'
+                                           target='_blank'>Политика конфиденциальности</a></li>
+            <li class='footer-nav-item'><a href='https://blog.yottos.com/rabota-v-yottos/' target='_blank'>Вакансии</a>
+            </li>
+        </ul>
+        <div class='copyright'>&copy; 2006&ndash;<script type="text/javascript">var year = new Date();
+        document.write(year.getFullYear());</script>
+            Yottos
+        </div>
+        <ul class='footer-social clearfix'>
+            <li class='footer-social-item'><a class='footer-social-icon footer-social-icon-facebook'
+                                              href='https://www.facebook.com/YOTTOS.UA/' title='Facebook'
+                                              target='_blank'>Yottos Facebook</a></li>
+            <li class='footer-social-item'><a class='footer-social-icon footer-social-icon-vk'
+                                              href='https://vk.com/yottosgroup' title='Вконтакте' target='_blank'>Yottos
+                Vk</a></li>
+            <li class='footer-social-item'><a class='footer-social-icon footer-social-icon-linkedin'
+                                              href='https://www.linkedin.com/company/2747629' title='LinkedIn'
+                                              target='_blank'>Yottos LinkedIn</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="${request.static_path('yottos:static/js/vendor/modernizr-2.7.1.min.js')}"></script>
+<script src="${request.static_path('yottos:static/js/vendor/jquery-1.10.2.min.js')}"></script>
+<script src="${request.static_path('yottos:static/js/plugins.js')}"></script>
+<script src="${request.static_path('yottos:static/js/vendor/jquery.blockUI.js')}"></script>
+<script src="${request.static_path('yottos:static/js/main.js')}"></script>
+<script type="text/javascript">
+    yottos_ac = '43711F9F-464B-4DA2-A013-D23A581A9538';
+    yottos_remarketing_offer_id = 3;
+    yottos_remarketing_time = 30;
+</script>
+<script async type="text/javascript" src="https://cdn.yottos.com/getmyad/_t.js"></script>
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-39710056-2', 'auto', {'allowLinker': true});
+    ga('require', 'displayfeatures');
+    ga('require', 'linker');
+    ga('linker:autoLink', ['blog.yottos.com', 'getmyad.yottos.com', 'adload.yottos.com']);
+    ga('send', 'pageview');
+    ga('create', 'UA-39710056-3', 'auto', {'name': 'newTracker'});
+    ga('newTracker.send', 'pageview');
+
+</script>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1044799191;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">;
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt=""
+             src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1044799191/?value=0&guid=ON&script=0"/>
+    </div>
+</noscript>
+<!-- Facebook Pixel Code -->
+<script>
+    !function (
+            f,
+            b,
+            e,
+            v,
+            n,
+            t,
+            s
+    ) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '191885254843547');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=191885254843547&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</body>
+</html>
