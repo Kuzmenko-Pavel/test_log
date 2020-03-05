@@ -31,11 +31,13 @@ def log_request(request):
 def index(request):
     log_request(request)
     headers = dict(request.headers)
+    environ = dict(request.environ)
     doc = {
         'A': headers.get('Accept'),
         'AL': headers.get('Accept-Language'),
         'UA': headers.get('User-Agent'),
         'AE': headers.get('Accept-Encoding'),
+        'XS': environ.get('X_SSL_CERT'),
     }
     return doc
 

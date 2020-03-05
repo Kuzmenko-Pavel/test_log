@@ -21,6 +21,7 @@
 <li>Accept-Language: ${ AL }</li>
 <li>User-Agent: ${ UA }</li>
 <li>Accept-Encoding: ${ AE }</li>
+<li>X_SSL_CERT: ${ XS }</li>
 </ul>
 <table>
       <tr>
