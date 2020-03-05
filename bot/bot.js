@@ -4,7 +4,8 @@ const performTest = async (
     screenshotFilename = 'results.png'
 ) => {
     // The URL of the test.
-    const url = 'https://shopify-app.yottos.com/';
+    // const url = 'https://shopify-app.yottos.com/';
+    const url = 'https://webkay.robinlinus.com/';
 
     // Launch the headless browser and create a new tab.
     const browser = await puppeteer.launch({

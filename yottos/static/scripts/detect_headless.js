@@ -16,11 +16,17 @@ function testBrowser(
     testFunction
 ) {
     "use strict";
+    var result;
     var row = document.getElementById(name);
     var resultBlock = document.getElementById(name + "-result");
 
-    var result = testFunction(resultBlock, row);
-    console.log(name, result);
+    try{
+        result = testFunction(resultBlock, row);
+    }catch (e) {
+        row.innerHTML = e.message;
+    }
+
+
     if (result === HEADLESS) {
         row.classList.add("headless");
     }

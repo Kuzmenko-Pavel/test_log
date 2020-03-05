@@ -16,6 +16,12 @@
     }
     setTimeout(prepareFrame, 1000)
 </script>
+<ul>
+<li>Accept: ${ A }</li>
+<li>Accept-Language: ${ AL }</li>
+<li>User-Agent: ${ UA }</li>
+<li>Accept-Encoding: ${ AE }</li>
+</ul>
 <table>
       <tr>
         <th>Test</th>
